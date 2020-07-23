@@ -1,0 +1,2 @@
+rootProject.name='Ukraine touristic'
+include ':app'

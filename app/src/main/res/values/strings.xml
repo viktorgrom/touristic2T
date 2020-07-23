@@ -1,0 +1,24 @@
+<resources>
+    <string name="map_key" translatable="false">
+        AIzaSyArruwNds8xvxWDLfZ8eNwycub9rqIL5DY
+    </string>
+    <string name="mariinskie_palace">Марії́нський пала́ц у Києві зведено в 1750–1755 роках за зразком палацу, який проектував Вартоломей Растреллі для Олексія Розумовського, фаворита та фактичного чоловіка імператриці Єлизавети Петрівни. Під час відвідування Києва 1744 року Єлизавета сама обрала для нього місце.</string>
+    <string name="kabmin">10-поверховий історичний хмарочос і найбільший в Києві адміністративний будинок[5] розташований по вул. Грушевського, 12/2, памятка архітектури. Зведений у 1936—1938 роках, став першим обєктом нового адміністративного комплексу на Липках. З 1990 року тут розміщується Кабінет Міністрів УРСР, а з 1991 Кабінет Міністрів України.</string>
+    <string name="mp">Маріїнський палац</string>
+    <string-array name="programming_languages">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </string-array>
+    <string-array name="description">
+        <item>This is random description.</item>
+        <item>This is random description.</item>
+        <item>This is random description.</item>
+        <item>This is random description.</item>
+        <item>This is random description.</item>
+
+    </string-array>
+</resources>
