@@ -1,38 +1,43 @@
 package com.example.ukrainetouristic;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
+
+
+import android.content.Intent;
 import android.os.Bundle;
-import com.example.ukrainetouristic.models.Hat;
-import com.example.ukrainetouristic.resources.Hats;
-import com.google.android.material.tabs.TabLayout;
-import java.util.ArrayList;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
-    private ViewPager mMyViewPager;
-    private TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home_page_activity);
 
-        mMyViewPager = findViewById(R.id.view_pager);
-        mTabLayout = findViewById(R.id.tab_layout);
-
-        init();
     }
 
-    private void init(){
-        ArrayList<Fragment> fragments = new ArrayList<>();
-        Hat[] hats = Hats.getHats();
-        for(Hat hat:hats){
-            ViewPagerItemFragment fragment = ViewPagerItemFragment.getInstance(hat);
-            fragments.add(fragment);
+    public void process(View view) {
+        Intent intent = null;
+        if (view.getId() == R.id.LaunchMap) {
+            intent = new Intent(this, MapActivity.class);
+
+            startActivity(intent);
         }
-        MyPagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager(), fragments);
-        mMyViewPager.setAdapter(pagerAdapter);
-        mTabLayout.setupWithViewPager(mMyViewPager,true);
+        if (view.getId() == R.id.LaunchCategory) {
+            intent = new Intent(this, Category_menu.class);
+
+            startActivity(intent);
+        }
+        if (view.getId() == R.id.LaunchAbout) {
+            intent = new Intent(this, Place_info_activity.class);
+
+            startActivity(intent);
+        }
+        /*if (view.getId() == R.id.LaunchAbout) {
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("geo:50.418683, 30.633565"));
+            startActivity(intent);
+        }*/
+
     }
+
 }

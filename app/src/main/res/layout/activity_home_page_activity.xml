@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page_activity">
+
+    <Button
+        android:id="@+id/LaunchMap"
+        android:layout_width="275dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="72dp"
+        android:onClick="process"
+        android:text="Map"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LaunchCategory"
+        android:layout_width="275dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="76dp"
+        android:onClick="process"
+        android:text="Category"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LaunchMap" />
+
+    <Button
+        android:id="@+id/LaunchAbout"
+        android:layout_width="275dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="76dp"
+        android:onClick="process"
+        android:text="Places view"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LaunchCategory"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

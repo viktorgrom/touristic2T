@@ -13,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Pre_place_info_activity"></activity>
+        <activity android:name=".Category_menu" />
+        <activity android:name=".Place_info_activity" />
+        <activity android:name=".MapActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
