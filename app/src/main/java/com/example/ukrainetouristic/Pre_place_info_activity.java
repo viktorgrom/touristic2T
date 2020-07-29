@@ -32,6 +32,7 @@ public class Pre_place_info_activity extends AppCompatActivity {
         mlist.add(new item(R.drawable.mp5, "Palace","fghjklcvbnm,rtyuiop"));
         mlist.add(new item(R.drawable.mp5, "Palace","fghjklcvbnm,rtyuiop"));
         mlist.add(new item(R.drawable.mp5, "Palace","fghjklcvbnm,rtyuiop"));
+        mlist.add(new item(R.drawable.mp5, "Palace","fghjklcvbnm,rtyuiop"));
         Adapter_recycler adapter = new Adapter_recycler(this, mlist);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
