@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.LaunchCategory) {
+        else if (view.getId() == R.id.LaunchCategory) {
             intent = new Intent(this, Category_menu.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.LaunchAbout) {
+        else if (view.getId() == R.id.LaunchAbout) {
             intent = new Intent(this, Place_info_activity.class);
 
             startActivity(intent);

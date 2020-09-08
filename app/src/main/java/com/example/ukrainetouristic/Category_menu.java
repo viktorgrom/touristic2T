@@ -21,37 +21,37 @@ public class Category_menu extends AppCompatActivity {
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category2) {
+        else if (view.getId() == R.id.place_category2) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category3) {
+        else if (view.getId() == R.id.place_category3) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category4) {
+        else if (view.getId() == R.id.place_category4) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category5) {
+        else if (view.getId() == R.id.place_category5) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category6) {
+        else if (view.getId() == R.id.place_category6) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category7) {
+        else if (view.getId() == R.id.place_category7) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
         }
-        if (view.getId() == R.id.place_category8) {
+        else if (view.getId() == R.id.place_category8) {
             intent = new Intent(this, Pre_place_info_activity.class);
 
             startActivity(intent);
