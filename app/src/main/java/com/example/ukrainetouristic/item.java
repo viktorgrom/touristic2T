@@ -2,6 +2,7 @@ package com.example.ukrainetouristic;
 
 public class item {
 
+    int id;
     int background;
     String profileName;
     String profileDescribe;
@@ -10,7 +11,8 @@ public class item {
 
     }
 
-    public item(int background, String profileName, String profileDescribe) {
+    public item(int id, int background, String profileName, String profileDescribe) {
+        this.id=id;
         this.background = background;
         this.profileName = profileName;
         this.profileDescribe = profileDescribe;
@@ -19,6 +21,7 @@ public class item {
     public int getBackground() {
         return background;
     }
+    public int getId() {return id;}
 
     public String getProfileName() {
         return profileName;
@@ -26,6 +29,10 @@ public class item {
 
     public String getProfileDescribe() {
         return profileDescribe;
+    }
+
+    public void setId (int id) {
+        this.id = id;
     }
 
     public void setBackground(int background) {
