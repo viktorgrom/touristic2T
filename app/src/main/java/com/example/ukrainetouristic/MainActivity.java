@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else if (view.getId() == R.id.LaunchAbout) {
-            intent = new Intent(this, Place_info_activity.class);
+            intent = new Intent(this, Region_menu.class);
 
             startActivity(intent);
         }

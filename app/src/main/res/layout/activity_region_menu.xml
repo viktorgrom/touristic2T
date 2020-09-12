@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Region_menu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/place_category1"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat1_hotun"
+            android:onClick="process_region"
+            android:text="Вінничина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category8"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/place_category2"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat2_galaganiv"
+            android:onClick="process_region"
+            android:text="Дніпропетровщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category7"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category1" />
+
+        <Button
+            android:id="@+id/place_category3"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat3_vodospad_djyrin"
+            android:onClick="process_region"
+            android:text="Житомирщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category6"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category2" />
+
+        <Button
+            android:id="@+id/place_category4"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Запоріжжя"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category5"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category3" />
+
+
+        <Button
+            android:id="@+id/place_category9"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Київщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category10"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category4" />
+
+        <Button
+            android:id="@+id/place_category11"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Луганщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category10"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category9" />
+
+        <Button
+            android:id="@+id/place_category13"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Миколаївщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category14"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category11" />
+
+        <Button
+            android:id="@+id/place_category15"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Полтавщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category13" />
+
+        <Button
+            android:id="@+id/place_category17"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Сумщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category15" />
+
+        <Button
+            android:id="@+id/place_category18"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Харківщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category21"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category17" />
+
+        <Button
+            android:id="@+id/place_category19"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat4_zmievi_valu"
+            android:onClick="process_region"
+            android:text="Хмельниччина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/place_category22"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category18" />
+
+        <Button
+            android:id="@+id/place_category5"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Іванофранківщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category4"
+            app:layout_constraintTop_toBottomOf="@+id/place_category6" />
+
+        <Button
+            android:id="@+id/place_category10"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Кропивниччина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/place_category4"
+            app:layout_constraintTop_toBottomOf="@+id/place_category5" />
+
+        <Button
+            android:id="@+id/place_category12"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Львівщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/place_category11"
+            app:layout_constraintTop_toBottomOf="@+id/place_category10" />
+
+        <Button
+            android:id="@+id/place_category14"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Одещина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category13"
+            app:layout_constraintTop_toBottomOf="@+id/place_category12" />
+
+        <Button
+            android:id="@+id/place_category16"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Рівненщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category15"
+            app:layout_constraintTop_toBottomOf="@+id/place_category14" />
+
+        <Button
+            android:id="@+id/place_category20"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Тернопільщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/place_category17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/place_category16" />
+
+        <Button
+            android:id="@+id/place_category21"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Херсонщина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category18"
+            app:layout_constraintTop_toBottomOf="@+id/place_category20" />
+
+        <Button
+            android:id="@+id/place_category22"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat5_pochaiv"
+            android:onClick="process_region"
+            android:text="Крим"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category19"
+            app:layout_constraintTop_toBottomOf="@+id/place_category21" />
+
+        <Button
+            android:id="@+id/place_category6"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat6_sofiivka"
+            android:onClick="process_region"
+            android:text="Закарпаття"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category3"
+            app:layout_constraintTop_toBottomOf="@+id/place_category7" />
+
+        <Button
+            android:id="@+id/place_category7"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat7_fon_mekk"
+            android:onClick="process_region"
+            android:text="Донеччина"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category2"
+            app:layout_constraintTop_toBottomOf="@+id/place_category8" />
+
+        <Button
+            android:id="@+id/place_category8"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/test_cat8_buchach"
+            android:onClick="process_region"
+            android:text="Волинь"
+            android:textColor="@color/lightGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

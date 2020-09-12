@@ -15,14 +15,14 @@ import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zamku;
 import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zikavi_mista;
 import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zikavi_miszia;
 
-public class Category_menu extends AppCompatActivity {
+public class Region_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category_menu);
+        setContentView(R.layout.activity_region_menu);
     }
-    public void process_category(View view) {
+    public void process_region(View view) {
         Intent intent = null;
         if (view.getId() == R.id.place_category1) {
             intent = new Intent(this, Pre_place_info_activity_zamku.class);

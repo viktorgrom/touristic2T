@@ -8,20 +8,21 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/misze"
         android:label="MapsApp"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/misze"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pre_place_info_activity"/>
-        <activity android:name=".Pre_place_info_activity_zamku"/>
-        <activity android:name=".Pre_place_info_activity_palaces"/>
-        <activity android:name=".Pre_place_info_activity_pam_prurody"/>
-        <activity android:name=".Pre_place_info_activity_zikavi_miszia"/>
-        <activity android:name=".Pre_place_info_activity_religiini_sporydu"/>
-        <activity android:name=".Pre_place_info_activity_parku"/>
-        <activity android:name=".Pre_place_info_activity_panski_sadibi"/>
-        <activity android:name=".Pre_place_info_activity_zikavi_mista"/>
+        <activity android:name=".Region_menu"/>
+        <activity android:name=".util.category.Pre_place_info_activity" />
+        <activity android:name=".util.category.Pre_place_info_activity_zamku" />
+        <activity android:name=".util.category.Pre_place_info_activity_palaces" />
+        <activity android:name=".util.category.Pre_place_info_activity_pam_prurody" />
+        <activity android:name=".util.category.Pre_place_info_activity_zikavi_miszia" />
+        <activity android:name=".util.category.Pre_place_info_activity_religiini_sporydu" />
+        <activity android:name=".util.category.Pre_place_info_activity_parku" />
+        <activity android:name=".util.category.Pre_place_info_activity_panski_sadibi" />
+        <activity android:name=".util.category.Pre_place_info_activity_zikavi_mista" />
         <activity android:name=".Category_menu" />
         <activity android:name=".Place_info_activity" />
         <activity android:name=".MapActivity" />
@@ -31,6 +32,7 @@
             android:value="@string/map_key" />
 
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
