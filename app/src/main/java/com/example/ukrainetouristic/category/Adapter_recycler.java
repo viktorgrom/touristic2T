@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic;
+package com.example.ukrainetouristic.category;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ukrainetouristic.placeInfo.Hat;
-import com.example.ukrainetouristic.placeInfo.Hats;
+import com.example.ukrainetouristic.R;
 import com.example.ukrainetouristic.placeInfo.Place_info_activity;
 
 import java.util.List;
@@ -50,10 +49,10 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
 
                 Intent intent = null;
                 intent = new Intent(mContext, Place_info_activity.class);
-                intent.putExtra("title", );
+               // intent.putExtra("title", );
                 mContext.startActivity(intent);
 
-                Toast.makeText(v.getContext(), "Гарний вибір"+ (position+1), Toast.LENGTH_SHORT).show();*/
+                Toast.makeText(v.getContext(), "Гарний вибір"+ (position+1), Toast.LENGTH_SHORT).show();
 
 
             }

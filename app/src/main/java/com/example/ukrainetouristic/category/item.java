@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic;
+package com.example.ukrainetouristic.category;
 
 public class item {
 

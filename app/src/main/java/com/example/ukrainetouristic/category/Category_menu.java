@@ -1,29 +1,21 @@
-package com.example.ukrainetouristic;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.ukrainetouristic.category;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.PrePlaceInfoActivityPlaces;
-import com.example.ukrainetouristic.PrePlaceInfoActivityPamPrurodu;
-import com.example.ukrainetouristic.PrePlaceInfoActivitySadubu;
-import com.example.ukrainetouristic.PrePlaceInfoActivityParku;
-import com.example.ukrainetouristic.PrePlaceInfoActivityReligiini;
-import com.example.ukrainetouristic.PrePlaceInfoActivityZamku;
-import com.example.ukrainetouristic.PrePlaceInfoActivityZikaviMista;
-import com.example.ukrainetouristic.PrePlaceInfoActivityZikaviMiszia;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Region_menu extends AppCompatActivity {
+import com.example.ukrainetouristic.R;
+
+public class Category_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_region_menu);
+        setContentView(R.layout.activity_category_menu);
     }
-    public void process_region(View view) {
+    public void process_category(View view) {
         Intent intent = null;
         if (view.getId() == R.id.place_category1) {
             intent = new Intent(this, PrePlaceInfoActivityZamku.class);

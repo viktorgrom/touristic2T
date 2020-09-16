@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.ukrainetouristic.category.Category_menu;
 import com.example.ukrainetouristic.map.MapActivity;
+import com.example.ukrainetouristic.region.Region_menu;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic;
+package com.example.ukrainetouristic.category;
 
 import android.os.Bundle;
 import android.view.Window;
@@ -7,6 +7,8 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.ukrainetouristic.R;
 
 import java.util.ArrayList;
 import java.util.List;
