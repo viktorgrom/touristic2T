@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.models;
+package com.example.ukrainetouristic.placeInfo;
 
 import android.os.Parcel;
 import android.os.Parcelable;

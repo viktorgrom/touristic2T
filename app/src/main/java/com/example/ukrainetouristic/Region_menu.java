@@ -6,14 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_palaces;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_pam_prurody;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_panski_sadibi;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_parku;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_religiini_sporydu;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zamku;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zikavi_mista;
-import com.example.ukrainetouristic.util.category.Pre_place_info_activity_zikavi_miszia;
+import com.example.ukrainetouristic.R;
+import com.example.ukrainetouristic.PrePlaceInfoActivityPlaces;
+import com.example.ukrainetouristic.PrePlaceInfoActivityPamPrurodu;
+import com.example.ukrainetouristic.PrePlaceInfoActivitySadubu;
+import com.example.ukrainetouristic.PrePlaceInfoActivityParku;
+import com.example.ukrainetouristic.PrePlaceInfoActivityReligiini;
+import com.example.ukrainetouristic.PrePlaceInfoActivityZamku;
+import com.example.ukrainetouristic.PrePlaceInfoActivityZikaviMista;
+import com.example.ukrainetouristic.PrePlaceInfoActivityZikaviMiszia;
 
 public class Region_menu extends AppCompatActivity {
 
@@ -25,42 +26,42 @@ public class Region_menu extends AppCompatActivity {
     public void process_region(View view) {
         Intent intent = null;
         if (view.getId() == R.id.place_category1) {
-            intent = new Intent(this, Pre_place_info_activity_zamku.class);
+            intent = new Intent(this, PrePlaceInfoActivityZamku.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category2) {
-            intent = new Intent(this, Pre_place_info_activity_palaces.class);
+            intent = new Intent(this, PrePlaceInfoActivityPlaces.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category3) {
-            intent = new Intent(this, Pre_place_info_activity_pam_prurody.class);
+            intent = new Intent(this, PrePlaceInfoActivityPamPrurodu.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category4) {
-            intent = new Intent(this, Pre_place_info_activity_zikavi_miszia.class);
+            intent = new Intent(this, PrePlaceInfoActivityZikaviMiszia.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category5) {
-            intent = new Intent(this, Pre_place_info_activity_religiini_sporydu.class);
+            intent = new Intent(this, PrePlaceInfoActivityReligiini.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category6) {
-            intent = new Intent(this, Pre_place_info_activity_parku.class);
+            intent = new Intent(this, PrePlaceInfoActivityParku.class);
 
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category7) {
-            intent = new Intent(this, Pre_place_info_activity_panski_sadibi.class);
+            intent = new Intent(this, PrePlaceInfoActivitySadubu.class);
 
             startActivity(intent);
         }
         else if(view.getId() == R.id.place_category8) {
-            intent = new Intent(this, Pre_place_info_activity_zikavi_mista.class);
+            intent = new Intent(this, PrePlaceInfoActivityZikaviMista.class);
 
             startActivity(intent);
         }

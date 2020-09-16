@@ -1,8 +1,6 @@
-package com.example.ukrainetouristic.util.category;
+package com.example.ukrainetouristic;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -10,15 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ukrainetouristic.Adapter_recycler;
-import com.example.ukrainetouristic.Place_info_activity;
-import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.item;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pre_place_info_activity_zamku extends AppCompatActivity {
+public class PrePlaceInfoActivityZamku extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +40,7 @@ public class Pre_place_info_activity_zamku extends AppCompatActivity {
 
     }
 
-    public void process_pre_item_clicked(View view) {
+    /*public void process_pre_item_clicked(View view) {
         Intent intent = null;
         //хочу сюди помістити id item який натиснуто
         if (view.getId() == R.id.card_background) {
@@ -57,5 +50,5 @@ public class Pre_place_info_activity_zamku extends AppCompatActivity {
         }
 
 
-    }
+    }*/
 }

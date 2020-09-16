@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic;
+package com.example.ukrainetouristic.placeInfo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -6,8 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.example.ukrainetouristic.models.Hat;
-import com.example.ukrainetouristic.resources.Hats;
+import com.example.ukrainetouristic.R;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;

@@ -13,19 +13,19 @@
         android:roundIcon="@drawable/misze"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Region_menu"/>
-        <activity android:name=".util.category.Pre_place_info_activity" />
-        <activity android:name=".util.category.Pre_place_info_activity_zamku" />
-        <activity android:name=".util.category.Pre_place_info_activity_palaces" />
-        <activity android:name=".util.category.Pre_place_info_activity_pam_prurody" />
-        <activity android:name=".util.category.Pre_place_info_activity_zikavi_miszia" />
-        <activity android:name=".util.category.Pre_place_info_activity_religiini_sporydu" />
-        <activity android:name=".util.category.Pre_place_info_activity_parku" />
-        <activity android:name=".util.category.Pre_place_info_activity_panski_sadibi" />
-        <activity android:name=".util.category.Pre_place_info_activity_zikavi_mista" />
+        <activity android:name="Region_menu"/>
+        <activity android:name=".PrePlaceInfoActivity" />
+        <activity android:name=".PrePlaceInfoActivityZamku" />
+        <activity android:name=".PrePlaceInfoActivityPlaces" />
+        <activity android:name=".PrePlaceInfoActivityPamPrurodu" />
+        <activity android:name=".PrePlaceInfoActivityZikaviMiszia" />
+        <activity android:name=".PrePlaceInfoActivityReligiini" />
+        <activity android:name=".PrePlaceInfoActivityParku" />
+        <activity android:name=".PrePlaceInfoActivitySadubu" />
+        <activity android:name=".PrePlaceInfoActivityZikaviMista" />
         <activity android:name=".Category_menu" />
-        <activity android:name=".Place_info_activity" />
-        <activity android:name=".MapActivity" />
+        <activity android:name=".placeInfo.Place_info_activity" />
+        <activity android:name=".map.MapActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

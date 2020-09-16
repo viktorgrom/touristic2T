@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic;
+package com.example.ukrainetouristic.placeInfo;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

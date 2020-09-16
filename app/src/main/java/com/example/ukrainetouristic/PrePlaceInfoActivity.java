@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.util.category;
+package com.example.ukrainetouristic;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,14 +8,10 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.ukrainetouristic.Adapter_recycler;
-import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.item;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pre_place_info_activity extends AppCompatActivity {
+public class PrePlaceInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

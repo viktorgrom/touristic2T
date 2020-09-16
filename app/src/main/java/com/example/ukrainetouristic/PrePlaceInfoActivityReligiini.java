@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.util.category;
+package com.example.ukrainetouristic;
 
 import android.os.Bundle;
 import android.view.Window;
@@ -8,14 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ukrainetouristic.Adapter_recycler;
-import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.item;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pre_place_info_activity_religiini_sporydu extends AppCompatActivity {
+public class PrePlaceInfoActivityReligiini extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
