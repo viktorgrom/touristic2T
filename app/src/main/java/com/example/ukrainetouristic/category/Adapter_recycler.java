@@ -2,6 +2,7 @@ package com.example.ukrainetouristic.category;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.ukrainetouristic.DetailTest;
 import com.example.ukrainetouristic.R;
 import com.example.ukrainetouristic.placeInfo.Place_info_activity;
 
@@ -20,9 +22,9 @@ import java.util.List;
 public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myViewHolder> {
 
     Context mContext;
-    List<item> mData;
+    public List<ItemCategory> mData;
 
-    public Adapter_recycler(Context mContext, List<item> mData) {
+    public Adapter_recycler(Context mContext, List<ItemCategory> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -42,17 +44,20 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
         holder.background_img.setImageResource(mData.get(position).getBackground());
         holder.tv_title.setText(mData.get(position).getProfileName());
         holder.tv_short_describe.setText(mData.get(position).getProfileDescribe());
+        holder.tv_long_describe.setText(mData.get(position).getProfileLongDescribe());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
                 Intent intent = null;
-                intent = new Intent(mContext, Place_info_activity.class);
-               // intent.putExtra("title", );
+                mData.get(position);
+
+                intent = new Intent(mContext, DetailTest.class);
+                intent.putExtra(DetailTest.EXTRA_MOUNTAIN, (Parcelable) mData.get(position));
+
                 mContext.startActivity(intent);
 
-                Toast.makeText(v.getContext(), "Гарний вибір"+ (position+1), Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Гарний вибір №"+ (position+1), Toast.LENGTH_SHORT).show();
 
 
             }
@@ -68,7 +73,7 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
 
     public static class myViewHolder extends RecyclerView.ViewHolder {
         ImageView background_img;
-        TextView tv_title, tv_short_describe;
+        TextView tv_title, tv_short_describe, tv_long_describe;
 
 
 
@@ -78,6 +83,8 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
             background_img = itemView.findViewById(R.id.card_background);
             tv_title = itemView.findViewById(R.id.card_title);
             tv_short_describe = itemView.findViewById(R.id.short_describe_place);
+            tv_long_describe = itemView.findViewById(R.id.tv_long_describe);
+
         }
     }
 

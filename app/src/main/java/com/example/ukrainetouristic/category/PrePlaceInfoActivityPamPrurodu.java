@@ -24,17 +24,17 @@ public class PrePlaceInfoActivityPamPrurodu extends AppCompatActivity {
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         RecyclerView recyclerView = findViewById(R.id.rv_list);
-        List<item> mlist = new ArrayList<>();
-        mlist.add(new item(31,R.drawable.test_cat3_dnister_kan, "Дністровський каньйон", "Верхів'я річки Дністер"));
-        mlist.add(new item(32,R.drawable.test_cat3_oleshkivski_pisku, "Олешківські піски", "Олешківський район, Херсонська обл."));
-        mlist.add(new item(33,R.drawable.test_cat3_korostushiv_kan, "Коростишівський каньйон", "Коростишів, Житомирська обл."));
-        mlist.add(new item(34,R.drawable.test_cat3_vodospad_djyrin, "Водоспад Джурин", "с.Нирків, Тернопільська обл."));
-        mlist.add(new item(35,R.drawable.test_cat3_pechera_vetreba, "Печера Ветреба", "c.Більче-Золоте, Тернопільська обл."));
-        mlist.add(new item(36,R.drawable.test_cat2_galaganiv, "Червонпад", "Со"));
-        mlist.add(new item(37,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop"));
-        mlist.add(new item(38,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop"));
-        mlist.add(new item(39,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop"));
-        mlist.add(new item(310,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop"));
+        List<ItemCategory> mlist = new ArrayList<>();
+        mlist.add(new ItemCategory(31,R.drawable.test_cat3_dnister_kan, "Дністровський каньйон", "Верхів'я річки Дністер","12"));
+        mlist.add(new ItemCategory(32,R.drawable.test_cat3_oleshkivski_pisku, "Олешківські піски", "Олешківський район, Херсонська обл.","12"));
+        mlist.add(new ItemCategory(33,R.drawable.test_cat3_korostushiv_kan, "Коростишівський каньйон", "Коростишів, Житомирська обл.","12"));
+        mlist.add(new ItemCategory(34,R.drawable.test_cat3_vodospad_djyrin, "Водоспад Джурин", "с.Нирків, Тернопільська обл.","12"));
+        mlist.add(new ItemCategory(35,R.drawable.test_cat3_pechera_vetreba, "Печера Ветреба", "c.Більче-Золоте, Тернопільська обл.","12"));
+        mlist.add(new ItemCategory(36,R.drawable.test_cat2_galaganiv, "Червонпад", "Со","12"));
+        mlist.add(new ItemCategory(37,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop","12"));
+        mlist.add(new ItemCategory(38,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop","12"));
+        mlist.add(new ItemCategory(39,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop","12"));
+        mlist.add(new ItemCategory(310,R.drawable.mp5, "Palace", "fghjklcvbnm,rtyuiop","12"));
         Adapter_recycler adapter = new Adapter_recycler(this, mlist);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

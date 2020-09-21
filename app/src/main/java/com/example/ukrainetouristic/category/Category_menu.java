@@ -23,7 +23,7 @@ public class Category_menu extends AppCompatActivity {
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category2) {
-            intent = new Intent(this, PrePlaceInfoActivityPlaces.class);
+            intent = new Intent(this, PrePlaceInfoActivityPalacu.class);
 
             startActivity(intent);
         }

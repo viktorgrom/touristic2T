@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.category.PrePlaceInfoActivityPlaces;
+import com.example.ukrainetouristic.category.PrePlaceInfoActivityPalacu;
 import com.example.ukrainetouristic.category.PrePlaceInfoActivityPamPrurodu;
 import com.example.ukrainetouristic.category.PrePlaceInfoActivitySadubu;
 import com.example.ukrainetouristic.category.PrePlaceInfoActivityParku;
@@ -31,7 +31,7 @@ public class Region_menu extends AppCompatActivity {
             startActivity(intent);
         }
         else if (view.getId() == R.id.place_category2) {
-            intent = new Intent(this, PrePlaceInfoActivityPlaces.class);
+            intent = new Intent(this, PrePlaceInfoActivityPalacu.class);
 
             startActivity(intent);
         }
