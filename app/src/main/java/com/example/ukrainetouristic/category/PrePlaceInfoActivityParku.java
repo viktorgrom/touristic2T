@@ -25,12 +25,9 @@ public class PrePlaceInfoActivityParku extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rv_list);
         List<ItemCategory> mlist = new ArrayList<>();
-        mlist.add(new ItemCategory(61,R.drawable.test_cat6_trahtemiriv, "Парк Трахтемирів","Трахтемирівський півострів, Київська обл.","12"));
-        mlist.add(new ItemCategory(62,R.drawable.test_cat6_sofiivka, "Софіївський парк","Умань, Черкаська обл.","12"));
-        mlist.add(new ItemCategory(63,R.drawable.test_cat1_bychach_zamok, "Бучацк","Бучач, ьська обл. 16ст.","12"));
-        mlist.add(new ItemCategory(64,R.drawable.test_cat1_pidgirzi, "Хотинська ця","Хотин, Чернів обл. 13-17ст.","12"));
-        mlist.add(new ItemCategory(65,R.drawable.test_cat1_medjib_zamok, "Меджибі́зьамок","Меджибіжил. 16ст.","12"));
-        mlist.add(new ItemCategory(66,R.drawable.test_cat1_kam_pod_zamok, "Кам'яне́ць-Пська форте́ця","Кам'яне́ць-Поді́льськ, Хмельницька обл. 16ст.","12"));
+        mlist.add(new ItemCategory(61,R.drawable.cat6_trahtemiriv1, "Парк Трахтемирів","Трахтемирівський півострів, Київська обл.","Регіональний ландшафтний парк, розташований на Трахтемирівському півострові. Площа 10711 га. Являє собою унікальний за геологічною будовою район, що характеризується значною піднятістю горбистої поверхні та утворенням ярів на правобережжі Дніпра. Тут багатий тваринний та рослинний світ.  "));
+        mlist.add(new ItemCategory(62,R.drawable.test_cat6_sofiivka, "Софіївський парк","Умань, Черкаська обл. 17-19ст.","Національний дендрологічний парк - шедевр світового значення серед садово-паркового мистецтва. Парк «Софіївка» заснований у 1796 році власником міста Умані, магнатом Станіславом Щенсним Потоцьким та названий на честь його дружини Софії Вітт-Потоцької. Щорічно тут відпочиває до 150тис. людей. Загальна площа 160 га. "));
+        mlist.add(new ItemCategory(63,R.drawable.cat6_kreminski_lisu1, "Кремінські ліси","Кремінський р-н, Луганська обл.","Площа 7269 га. Парк створено з метою збереження та відновлення природних комплексів басейну річки Сіверський Донець. "));
 
         Adapter_recycler adapter = new Adapter_recycler(this, mlist);
         recyclerView.setAdapter(adapter);
