@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_page_activity">
+    tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/LaunchMap"
@@ -24,9 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Map"
+        android:text="Карата"
         android:textColor="#fff"
-        android:textSize="36sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/LaunchMap"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:onClick="process"
-        android:src="@drawable/mp2"
-        android:text="Category"
+        android:src="@drawable/main_foto_category"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LaunchMap" />
@@ -51,9 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Category"
+        android:text="Категорії"
         android:textColor="#fff"
-        android:textSize="36sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/LaunchCategory"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +69,7 @@
         android:layout_marginEnd="5dp"
         android:onClick="process"
         android:src="@drawable/mp1"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LaunchCategory" />
@@ -77,9 +78,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Region"
+        android:text="Регіони"
         android:textColor="#fff"
-        android:textSize="36sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/LaunchAbout"
         app:layout_constraintEnd_toEndOf="parent"

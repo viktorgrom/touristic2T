@@ -20,19 +20,15 @@
         android:id="@+id/btn_follow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/btn_follow_style"
         android:padding="5dp"
         android:text="Детально"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/short_describe_place"
-        app:layout_constraintTop_toBottomOf="@+id/iv_background_detail"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/iv_background_detail"
@@ -47,12 +43,12 @@
     <TextView
         android:id="@+id/card_title"
         android:layout_width="276dp"
-        android:layout_height="26dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Titel"
         android:textColor="#fff"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/iv_background_detail"
         app:layout_constraintTop_toTopOf="@+id/iv_background_detail" />
