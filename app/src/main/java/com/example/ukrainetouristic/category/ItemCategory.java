@@ -7,15 +7,15 @@ public class ItemCategory implements Parcelable {
 
     int id;
     int background;
-    String profileName;
-    String profileDescribe;
-    String profileLongDescribe;
+    int profileName;
+    int profileDescribe;
+    int profileLongDescribe;
 
     public ItemCategory(){
 
     }
 
-    public ItemCategory(int id, int background, String profileName, String profileDescribe, String profileLongDescribe) {
+    public ItemCategory(int id, int background, int profileName, int profileDescribe, int profileLongDescribe) {
         this.id=id;
         this.background = background;
         this.profileName = profileName;
@@ -26,9 +26,9 @@ public class ItemCategory implements Parcelable {
     protected ItemCategory(Parcel in) {
         id = in.readInt();
         background = in.readInt();
-        profileName = in.readString();
-        profileDescribe = in.readString();
-        profileLongDescribe = in.readString();
+        profileName = in.readInt();
+        profileDescribe = in.readInt();
+        profileLongDescribe = in.readInt();
     }
 
     public static final Creator<ItemCategory> CREATOR = new Creator<ItemCategory>() {
@@ -47,12 +47,12 @@ public class ItemCategory implements Parcelable {
         return background;
     }
     public int getId() {return id;}
-    public String getProfileName() {
+    public int getProfileName() {
         return profileName;
     }
-    public String getProfileDescribe() { return profileDescribe;
+    public int getProfileDescribe() { return profileDescribe;
     }
-    public String getProfileLongDescribe() { return profileLongDescribe; }
+    public int getProfileLongDescribe() { return profileLongDescribe; }
 
     public void setId (int id) {
         this.id = id;
@@ -62,10 +62,10 @@ public class ItemCategory implements Parcelable {
         this.background = background;
     }
 
-    public void setProfileName(String profileName) { this.profileName = profileName; }
+    public void setProfileName(int profileName) { this.profileName = profileName; }
 
-    public void setProfileDescribe(String profileDescribe) { this.profileDescribe = profileDescribe; }
-    public void setProfileLongDescribe(String profileLongDescribe) { this.profileLongDescribe = profileLongDescribe; }
+    public void setProfileDescribe(int profileDescribe) { this.profileDescribe = profileDescribe; }
+    public void setProfileLongDescribe(int profileLongDescribe) { this.profileLongDescribe = profileLongDescribe; }
 
     @Override
     public int describeContents() {
@@ -76,9 +76,9 @@ public class ItemCategory implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
         dest.writeInt(background);
-        dest.writeString(profileName);
-        dest.writeString(profileDescribe);
-        dest.writeString(profileLongDescribe);
+        dest.writeInt(profileName);
+        dest.writeInt(profileDescribe);
+        dest.writeInt(profileLongDescribe);
     }
 
 
