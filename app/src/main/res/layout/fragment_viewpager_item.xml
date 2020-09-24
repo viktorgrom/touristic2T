@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/image"
-        android:scaleType="centerInside"
-        android:layout_above="@+id/linLayout"/>
+        android:layout_above="@+id/linLayout"
+        android:scaleType="centerInside" />
+
     <LinearLayout
+        android:id="@+id/linLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/linLayout"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:id="@+id/title"
             android:layout_marginStart="10dp"
-            android:text="@string/mp"/>
+            android:text="@string/mp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
         <TextView
+            android:id="@+id/describe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_attach_money_black_24dp"
             android:text="1"
-            android:textSize="16sp"
             android:textColor="#000"
-            android:id="@+id/describe"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 

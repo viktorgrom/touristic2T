@@ -1,12 +1,11 @@
-package com.example.ukrainetouristic.placeInfo;
+package com.example.ukrainetouristic.testplaceInfo;
 
 import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.placeInfo.Hat;
 
 
 public class Hats {
 
-    public static Hat[] getHats(){
+    public static Hat[] getHats() {
         return SNAPBACKS;
     }
 
@@ -24,7 +23,6 @@ public class Hats {
             "Klasne misce");
 
     public static Hat[] SNAPBACKS = {SNAPBACK_NAVY, SNAPBACK_BLACK, SNAPBACK_CAMO, SNAPBACK_GREY, SNAPBACK_RED, SNAPBACK_TEAL};
-
 
 
 }

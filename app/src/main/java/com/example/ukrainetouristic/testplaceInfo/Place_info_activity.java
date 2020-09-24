@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.placeInfo;
+package com.example.ukrainetouristic.testplaceInfo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;

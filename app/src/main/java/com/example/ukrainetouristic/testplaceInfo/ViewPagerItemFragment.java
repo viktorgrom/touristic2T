@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.placeInfo;
+package com.example.ukrainetouristic.testplaceInfo;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,10 +24,10 @@ public class ViewPagerItemFragment extends Fragment {
     // vars
     private Hat mHat;
 
-    public static ViewPagerItemFragment getInstance(Hat hat){
+    public static ViewPagerItemFragment getInstance(Hat hat) {
         ViewPagerItemFragment fragment = new ViewPagerItemFragment();
 
-        if(hat != null){
+        if (hat != null) {
             Bundle bundle = new Bundle();
             bundle.putParcelable("hat", hat);
             fragment.setArguments(bundle);
@@ -38,7 +38,7 @@ public class ViewPagerItemFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getArguments() != null){
+        if (getArguments() != null) {
             mHat = getArguments().getParcelable("hat");
         }
     }
@@ -57,8 +57,8 @@ public class ViewPagerItemFragment extends Fragment {
         init();
     }
 
-    private void init(){
-        if(mHat != null){
+    private void init() {
+        if (mHat != null) {
             RequestOptions options = new RequestOptions()
                     .placeholder(R.drawable.ic_launcher_background);
 

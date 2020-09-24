@@ -13,9 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ukrainetouristic.DetailTest;
+import com.example.ukrainetouristic.detail.DetailPlaceInfo;
 import com.example.ukrainetouristic.R;
-import com.example.ukrainetouristic.placeInfo.Place_info_activity;
 
 import java.util.List;
 
@@ -45,6 +44,7 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
         holder.tv_title.setText(mData.get(position).getProfileName());
         holder.tv_short_describe.setText(mData.get(position).getProfileDescribe());
         holder.tv_long_describe.setText(mData.get(position).getProfileLongDescribe());
+        // set clicklistener
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,12 +52,12 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
                 Intent intent = null;
                 mData.get(position);
 
-                intent = new Intent(mContext, DetailTest.class);
-                intent.putExtra(DetailTest.EXTRA_MOUNTAIN, (Parcelable) mData.get(position));
+                intent = new Intent(mContext, DetailPlaceInfo.class);
+                intent.putExtra(DetailPlaceInfo.EXTRA_MOUNTAIN, (Parcelable) mData.get(position));
 
                 mContext.startActivity(intent);
 
-                Toast.makeText(v.getContext(), "Гарний вибір №"+ (position+1), Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Гарний вибір №" + (position + 1), Toast.LENGTH_SHORT).show();
 
 
             }
@@ -68,7 +68,7 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
 
     @Override
     public int getItemCount() {
-        return mData.size() ;
+        return mData.size();
     }
 
     public static class myViewHolder extends RecyclerView.ViewHolder {
@@ -76,9 +76,7 @@ public class Adapter_recycler extends RecyclerView.Adapter<Adapter_recycler.myVi
         TextView tv_title, tv_short_describe, tv_long_describe;
 
 
-
-
-        public myViewHolder (View itemView) {
+        public myViewHolder(View itemView) {
             super(itemView);
             background_img = itemView.findViewById(R.id.card_background);
             tv_title = itemView.findViewById(R.id.card_title);

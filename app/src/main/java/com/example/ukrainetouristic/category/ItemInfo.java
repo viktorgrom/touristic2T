@@ -9,14 +9,13 @@ public class ItemInfo {
     private String proShortDescribe;
     private String proLongDescribe;
 
-    public ItemInfo( String profileName, String proShortDescribe, String proLongDescribe) {
+    public ItemInfo(String profileName, String proShortDescribe, String proLongDescribe) {
 
 
         this.profileName = profileName;
         this.proShortDescribe = proShortDescribe;
         this.proLongDescribe = proLongDescribe;
     }
-
 
 
     public String getProfileName() {

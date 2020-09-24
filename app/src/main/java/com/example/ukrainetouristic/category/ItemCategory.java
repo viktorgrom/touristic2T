@@ -11,12 +11,12 @@ public class ItemCategory implements Parcelable {
     int profileDescribe;
     int profileLongDescribe;
 
-    public ItemCategory(){
+    public ItemCategory() {
 
     }
 
     public ItemCategory(int id, int background, int profileName, int profileDescribe, int profileLongDescribe) {
-        this.id=id;
+        this.id = id;
         this.background = background;
         this.profileName = profileName;
         this.profileDescribe = profileDescribe;
@@ -30,6 +30,7 @@ public class ItemCategory implements Parcelable {
         profileDescribe = in.readInt();
         profileLongDescribe = in.readInt();
     }
+    //parceble
 
     public static final Creator<ItemCategory> CREATOR = new Creator<ItemCategory>() {
         @Override
@@ -46,15 +47,24 @@ public class ItemCategory implements Parcelable {
     public int getBackground() {
         return background;
     }
-    public int getId() {return id;}
+
+    public int getId() {
+        return id;
+    }
+
     public int getProfileName() {
         return profileName;
     }
-    public int getProfileDescribe() { return profileDescribe;
-    }
-    public int getProfileLongDescribe() { return profileLongDescribe; }
 
-    public void setId (int id) {
+    public int getProfileDescribe() {
+        return profileDescribe;
+    }
+
+    public int getProfileLongDescribe() {
+        return profileLongDescribe;
+    }
+
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -62,10 +72,17 @@ public class ItemCategory implements Parcelable {
         this.background = background;
     }
 
-    public void setProfileName(int profileName) { this.profileName = profileName; }
+    public void setProfileName(int profileName) {
+        this.profileName = profileName;
+    }
 
-    public void setProfileDescribe(int profileDescribe) { this.profileDescribe = profileDescribe; }
-    public void setProfileLongDescribe(int profileLongDescribe) { this.profileLongDescribe = profileLongDescribe; }
+    public void setProfileDescribe(int profileDescribe) {
+        this.profileDescribe = profileDescribe;
+    }
+
+    public void setProfileLongDescribe(int profileLongDescribe) {
+        this.profileLongDescribe = profileLongDescribe;
+    }
 
     @Override
     public int describeContents() {

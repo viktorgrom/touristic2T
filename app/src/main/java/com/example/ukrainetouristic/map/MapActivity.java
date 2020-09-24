@@ -28,9 +28,12 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback,
         assert mapFragment != null;
         mapFragment.getMapAsync(this);
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        map=googleMap;
+        map = googleMap;
+
+        //add markers on map
 
         LatLng location11 = new LatLng(49.663258, 25.785249);
         MarkerOptions options11 = new MarkerOptions();
@@ -368,27 +371,28 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback,
         options74.snippet("");
         options74.icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_cat7));
 
-        LatLng location81= new LatLng(50.101062, 25.728370);
+        LatLng location81 = new LatLng(50.101062, 25.728370);
         MarkerOptions options81 = new MarkerOptions();
         options81.position(location81);
         options81.title("Кременець");
         options81.snippet("");
         options81.icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_cat8));
 
-        LatLng location82= new LatLng(49.062785, 25.408508);
+        LatLng location82 = new LatLng(49.062785, 25.408508);
         MarkerOptions options82 = new MarkerOptions();
         options82.position(location82);
         options82.title("Бучач");
         options82.snippet("");
         options82.icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_cat8));
 
-        LatLng location83= new LatLng(50.179605, 27.066903);
+        LatLng location83 = new LatLng(50.179605, 27.066903);
         MarkerOptions options83 = new MarkerOptions();
         options83.position(location83);
         options83.title("Шепетівка");
         options83.snippet("");
         options83.icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_cat8));
 
+        //move camera to start position
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(location29, +5));
         map.setOnInfoWindowClickListener(this);
         map.addMarker(options11);
@@ -444,6 +448,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback,
 
     }
 
+    //clicklistener on InfoWindow
     @Override
     public void onInfoWindowClick(Marker marker) {
         Toast.makeText(this, marker.getTitle() + " обрано", Toast.LENGTH_SHORT).show();

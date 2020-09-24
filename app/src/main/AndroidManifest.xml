@@ -13,8 +13,9 @@
         android:roundIcon="@drawable/misze"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailTest"></activity>
-        <activity android:name=".region.Region_menu" />
+        <activity android:name=".aboutproject.AboutProject"/>
+        <activity android:name=".detail.DetailPlaceInfo" />
+        <activity android:name=".testregion.Region_menu" />
         <activity android:name=".category.PrePlaceInfoActivityZamku" />
         <activity android:name=".category.PrePlaceInfoActivityPalacu" />
         <activity android:name=".category.PrePlaceInfoActivityPamPrurodu" />
@@ -24,7 +25,7 @@
         <activity android:name=".category.PrePlaceInfoActivitySadubu" />
         <activity android:name=".category.PrePlaceInfoActivityZikaviMista" />
         <activity android:name=".category.Category_menu" />
-        <activity android:name=".placeInfo.Place_info_activity" />
+        <activity android:name=".testplaceInfo.Place_info_activity" />
         <activity android:name=".map.MapActivity" />
 
         <meta-data

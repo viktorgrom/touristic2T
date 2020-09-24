@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".region.Region_menu">
+    tools:context=".testregion.Region_menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -290,8 +290,8 @@
             android:text="Тернопільщина"
             android:textColor="@color/lightGrey"
             android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/place_category17"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/place_category17"
             app:layout_constraintTop_toBottomOf="@+id/place_category16" />
 
         <Button
@@ -375,7 +375,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </ScrollView>

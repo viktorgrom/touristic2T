@@ -1,4 +1,4 @@
-package com.example.ukrainetouristic.placeInfo;
+package com.example.ukrainetouristic.testplaceInfo;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 public class MyPagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<Fragment> mFragments ;
+    private ArrayList<Fragment> mFragments;
 
     public MyPagerAdapter(@NonNull FragmentManager fm, ArrayList<Fragment> fragments) {
         super(fm);
-        mFragments=fragments;
+        mFragments = fragments;
 
     }
 

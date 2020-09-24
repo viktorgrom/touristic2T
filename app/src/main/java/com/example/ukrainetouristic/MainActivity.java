@@ -1,4 +1,5 @@
 package com.example.ukrainetouristic;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -6,9 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.ukrainetouristic.aboutproject.AboutProject;
 import com.example.ukrainetouristic.category.Category_menu;
 import com.example.ukrainetouristic.map.MapActivity;
-import com.example.ukrainetouristic.region.Region_menu;
+import com.example.ukrainetouristic.testregion.Region_menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,14 +27,12 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, MapActivity.class);
 
             startActivity(intent);
-        }
-        else if (view.getId() == R.id.LaunchCategory) {
+        } else if (view.getId() == R.id.LaunchCategory) {
             intent = new Intent(this, Category_menu.class);
 
             startActivity(intent);
-        }
-        else if (view.getId() == R.id.LaunchAbout) {
-            intent = new Intent(this, Region_menu.class);
+        } else if (view.getId() == R.id.LaunchAbout) {
+            intent = new Intent(this, AboutProject.class);
 
             startActivity(intent);
         }
