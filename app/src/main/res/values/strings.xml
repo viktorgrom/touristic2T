@@ -174,6 +174,7 @@
     <string name="main_name_category">Категорії</string>
     <string name="main_name_about">Про проект</string>
     <string name="item_button">Детально</string>
+    <string name="region_title">Регіони</string>
     <string-array name="programming_languages">
         <item>1</item>
         <item>2</item>

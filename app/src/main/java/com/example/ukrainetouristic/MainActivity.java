@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, Category_menu.class);
 
             startActivity(intent);
+        } else if (view.getId() == R.id.LaunchRegions) {
+            intent = new Intent(this, Region_menu.class);
+
+            startActivity(intent);
         } else if (view.getId() == R.id.LaunchAbout) {
             intent = new Intent(this, AboutProject.class);
 

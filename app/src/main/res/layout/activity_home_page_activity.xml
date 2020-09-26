@@ -1,100 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/LaunchMap"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="process"
-        android:scaleType="fitXY"
-        android:src="@drawable/map_ukraine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/map_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/btn_follow_style"
-        android:padding="5dp"
-        android:text="@string/main_name_map"
-        android:textColor="#1C1211"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/LaunchMap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/LaunchMap"
-        app:layout_constraintTop_toTopOf="@+id/LaunchMap" />
+        <ImageButton
+            android:id="@+id/LaunchMap"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="process"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_ukraine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/LaunchCategory"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="process"
-        android:scaleType="fitXY"
-        android:src="@drawable/main_foto_category"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LaunchMap" />
+        <TextView
+            android:id="@+id/map_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/btn_follow_style"
+            android:padding="5dp"
+            android:text="@string/main_name_map"
+            android:textColor="#1C1211"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/LaunchMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/LaunchMap"
+            app:layout_constraintTop_toTopOf="@+id/LaunchMap" />
 
-    <TextView
-        android:id="@+id/category_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/btn_follow_style"
-        android:padding="5dp"
-        android:text="@string/main_name_category"
-        android:textColor="#1C1211"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/LaunchCategory"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/LaunchCategory"
-        app:layout_constraintTop_toTopOf="@+id/LaunchCategory" />
+        <ImageButton
+            android:id="@+id/LaunchCategory"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="process"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_foto_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LaunchMap" />
 
-    <ImageButton
-        android:id="@+id/LaunchAbout"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="process"
-        android:scaleType="fitXY"
-        android:src="@drawable/main_foto_kartana_regioniv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LaunchCategory" />
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/btn_follow_style"
+            android:padding="5dp"
+            android:text="@string/main_name_category"
+            android:textColor="#1C1211"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/LaunchCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/LaunchCategory"
+            app:layout_constraintTop_toTopOf="@+id/LaunchCategory" />
 
-    <TextView
-        android:id="@+id/region_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/btn_follow_style"
-        android:padding="5dp"
-        android:text="@string/main_name_about"
-        android:textColor="#1C1211"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/LaunchAbout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/LaunchAbout"
-        app:layout_constraintTop_toTopOf="@+id/LaunchAbout" />
+        <ImageButton
+            android:id="@+id/LaunchRegions"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="process"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_foto_kartana_regioniv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LaunchCategory" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/region_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_follow_style"
+            android:padding="5dp"
+            android:text="@string/region_title"
+            android:textColor="#1C1211"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/LaunchRegions"
+            app:layout_constraintEnd_toEndOf="@+id/LaunchRegions"
+            app:layout_constraintStart_toStartOf="@+id/LaunchRegions"
+            app:layout_constraintTop_toBottomOf="@+id/LaunchCategory" />
+
+        <ImageButton
+            android:id="@+id/LaunchAbout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="process"
+            android:scaleType="fitXY"
+            android:src="@drawable/cat1_chervonogrud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LaunchRegions" />
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/btn_follow_style"
+            android:padding="5dp"
+            android:text="@string/main_name_about"
+            android:textColor="#1C1211"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/LaunchAbout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="@+id/LaunchAbout"
+            app:layout_constraintTop_toTopOf="@+id/LaunchAbout"
+            app:layout_constraintVertical_bias="0.606" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
