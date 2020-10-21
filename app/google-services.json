@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "699557507754",
+    "firebase_url": "https://ukraine-touristic.firebaseio.com",
+    "project_id": "ukraine-touristic",
+    "storage_bucket": "ukraine-touristic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699557507754:android:dfc4659dcd253143b456d3",
+        "android_client_info": {
+          "package_name": "com.example.ukrainetouristic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699557507754-mphv7k69a851l04fusnnv4o44koh7spa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2BbTNmojMFBmcetWcibtc8k-FewA9cCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699557507754-mphv7k69a851l04fusnnv4o44koh7spa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
