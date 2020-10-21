@@ -33,6 +33,18 @@
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
             app:layout_constraintVertical_bias="0.44" />
+        <TextView
+            android:id="@+id/tv_aboud"
+            android:layout_width="231dp"
+            android:layout_height="57dp"
+            android:text="@string/about_iv_text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.44" />
 
         <TextView
             android:id="@+id/textView"
